@@ -32,8 +32,8 @@ enum Endpoints {
   // compose the NetworkRequest
     func createRequest(token: String) -> NetworkRequest {
         var headers: Headers = [:]
-        headers["Content-Type"] = "application/json"
-        headers["Authorization"] = "Bearer \(token)"
+//        headers["Content-Type"] = "application/json"
+//        headers["Authorization"] = "Bearer \(token)"
         return NetworkRequest(url: getURL(), headers: headers, reqBody: requestBody, httpMethod: httpMethod)
     }
     

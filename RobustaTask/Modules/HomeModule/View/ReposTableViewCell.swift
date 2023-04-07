@@ -12,7 +12,7 @@ class ReposTableViewCell: UITableViewCell {
     private lazy var avatarImageView: UIImageView = {
         let imgView = UIImageView()
         imgView.translatesAutoresizingMaskIntoConstraints = false
-        imgView.layer.cornerRadius = Constants.padding
+        imgView.layer.cornerRadius = HomeViewConstants.padding
         imgView.clipsToBounds = true
         imgView.layer.borderWidth = 1
         imgView.layer.masksToBounds = false
@@ -23,7 +23,7 @@ class ReposTableViewCell: UITableViewCell {
     private lazy var repoNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: Constants.fontSize, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: HomeViewConstants.fontSize, weight: .bold)
         label.textColor = .black
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -34,7 +34,7 @@ class ReposTableViewCell: UITableViewCell {
     private lazy var repoOwnerLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: Constants.fontSize, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: HomeViewConstants.fontSize, weight: .regular)
         label.textColor = .black
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -44,7 +44,7 @@ class ReposTableViewCell: UITableViewCell {
     private lazy var dateCreatedLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: Constants.fontSize, weight: .regular)
+        label.font = UIFont.systemFont(ofSize: HomeViewConstants.fontSize, weight: .regular)
         label.textColor = .darkGray
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -75,28 +75,28 @@ class ReposTableViewCell: UITableViewCell {
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             avatarImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            avatarImageView.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: Constants.padding),
-            avatarImageView.heightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.heightAnchor, multiplier: Constants.largeMultiplier),
+            avatarImageView.leadingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leadingAnchor, constant: HomeViewConstants.padding),
+            avatarImageView.heightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.heightAnchor, multiplier: HomeViewConstants.largeMultiplier),
             avatarImageView.widthAnchor.constraint(equalTo: avatarImageView.heightAnchor)
         ])
         
         NSLayoutConstraint.activate([
-            repoNameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: Constants.padding),
-            repoNameLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(Constants.padding)),
-            repoNameLabel.topAnchor.constraint(equalTo: avatarImageView.topAnchor, constant: Constants.padding)
+            repoNameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: HomeViewConstants.padding),
+            repoNameLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(HomeViewConstants.padding)),
+            repoNameLabel.topAnchor.constraint(equalTo: avatarImageView.topAnchor, constant: HomeViewConstants.padding)
             
         ])
         
         NSLayoutConstraint.activate([
             repoOwnerLabel.leadingAnchor.constraint(equalTo: repoNameLabel.leadingAnchor),
-            repoOwnerLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(Constants.padding)),
-            repoOwnerLabel.topAnchor.constraint(equalTo: repoNameLabel.bottomAnchor, constant: Constants.padding)
+            repoOwnerLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(HomeViewConstants.padding)),
+            repoOwnerLabel.topAnchor.constraint(equalTo: repoNameLabel.bottomAnchor, constant: HomeViewConstants.padding)
         ])
         
         NSLayoutConstraint.activate([
             dateCreatedLabel.leadingAnchor.constraint(equalTo: repoNameLabel.leadingAnchor),
-            dateCreatedLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(Constants.padding)),
-            dateCreatedLabel.topAnchor.constraint(equalTo: repoOwnerLabel.bottomAnchor, constant: Constants.padding)
+            dateCreatedLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -(HomeViewConstants.padding)),
+            dateCreatedLabel.topAnchor.constraint(equalTo: repoOwnerLabel.bottomAnchor, constant: HomeViewConstants.padding)
         ])
     }
     

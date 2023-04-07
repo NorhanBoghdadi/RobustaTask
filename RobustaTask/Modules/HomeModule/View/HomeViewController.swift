@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-struct Constants {
+struct HomeViewConstants {
     static let padding = 10.0
     static let smallMultiplier = 0.3
     static let largeMultiplier = 0.75
@@ -25,11 +25,13 @@ class HomeViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(ReposTableViewCell.self, forCellReuseIdentifier: Constants.homeTableViewReuseId)
+        tableView.register(ReposTableViewCell.self, forCellReuseIdentifier: HomeViewConstants.homeTableViewReuseId)
         return tableView
 
     }()
     
+    let refreshControl = UIRefreshControl()
+
     init(homeViewModel: HomeViewModel) {
         self.homeViewModel = homeViewModel
         super.init(nibName: nil, bundle: nil)
@@ -49,6 +51,9 @@ class HomeViewController: UIViewController {
     
     private func setupViews() {
         view.addSubview(reposTableView)
+        reposTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+
         homeViewModel.$allRepos
             .receive(on: DispatchQueue.main)
             .sink { [weak self] items in
@@ -71,6 +76,9 @@ class HomeViewController: UIViewController {
         
         ])
     }
+    @objc private func refresh() {
+        homeViewModel.getAllRepos()
+    }
 
 }
 
@@ -85,7 +93,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = reposTableView.dequeueReusableCell(withIdentifier: Constants.homeTableViewReuseId, for: indexPath) as! ReposTableViewCell
+        let cell = reposTableView.dequeueReusableCell(withIdentifier: HomeViewConstants.homeTableViewReuseId, for: indexPath) as! ReposTableViewCell
     
         let model = homeViewModel.searchActive ? homeViewModel.filteredRepos[indexPath.row] : homeViewModel.allRepos[indexPath.row]
         cell.configure(for: model)

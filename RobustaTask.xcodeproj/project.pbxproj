@@ -28,6 +28,7 @@
 		7C96D99D29E05347000CFE85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99B29E05347000CFE85 /* HomeViewModel.swift */; };
 		7C96D99F29E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
 		7C96D9A029E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
+		7CD15A6829E0C958000A90E9 /* ReposSearchModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A6729E0C958000A90E9 /* ReposSearchModelResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		7C96D99B29E05347000CFE85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewCell.swift; sourceTree = "<group>"; };
+		7CD15A6729E0C958000A90E9 /* ReposSearchModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposSearchModelResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */,
+				7CD15A6729E0C958000A90E9 /* ReposSearchModelResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				7C96D99929E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */,
 				7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D95629E03793000CFE85 /* SceneDelegate.swift in Sources */,
+				7CD15A6829E0C958000A90E9 /* ReposSearchModelResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

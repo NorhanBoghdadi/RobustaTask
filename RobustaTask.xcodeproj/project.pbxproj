@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		7C96D95429E03793000CFE85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D95329E03793000CFE85 /* AppDelegate.swift */; };
 		7C96D95629E03793000CFE85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D95529E03793000CFE85 /* SceneDelegate.swift */; };
-		7C96D95829E03793000CFE85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D95729E03793000CFE85 /* ViewController.swift */; };
-		7C96D95B29E03793000CFE85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C96D95929E03793000CFE85 /* Main.storyboard */; };
+		7C96D95829E03793000CFE85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D95729E03793000CFE85 /* HomeViewController.swift */; };
 		7C96D95D29E03798000CFE85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C96D95C29E03798000CFE85 /* Assets.xcassets */; };
 		7C96D96029E03798000CFE85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C96D95E29E03798000CFE85 /* LaunchScreen.storyboard */; };
 		7C96D96B29E03799000CFE85 /* RobustaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D96A29E03799000CFE85 /* RobustaTaskTests.swift */; };
 		7C96D97529E03799000CFE85 /* RobustaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D97429E03799000CFE85 /* RobustaTaskUITests.swift */; };
 		7C96D97729E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D97629E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift */; };
+		7C96D98729E04442000CFE85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98629E04442000CFE85 /* NetworkRequest.swift */; };
+		7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98629E04442000CFE85 /* NetworkRequest.swift */; };
+		7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98929E0448F000CFE85 /* EndPoints.swift */; };
+		7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
+		7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,7 @@
 		7C96D95029E03793000CFE85 /* RobustaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobustaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C96D95329E03793000CFE85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C96D95529E03793000CFE85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C96D95729E03793000CFE85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C96D95A29E03793000CFE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C96D95729E03793000CFE85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C96D95C29E03798000CFE85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C96D95F29E03798000CFE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C96D96129E03798000CFE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		7C96D97029E03799000CFE85 /* RobustaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C96D97429E03799000CFE85 /* RobustaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskUITests.swift; sourceTree = "<group>"; };
 		7C96D97629E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C96D98629E04442000CFE85 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		7C96D98929E0448F000CFE85 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModelResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,9 @@
 		7C96D95229E03793000CFE85 /* RobustaTask */ = {
 			isa = PBXGroup;
 			children = (
-				7C96D95329E03793000CFE85 /* AppDelegate.swift */,
-				7C96D95529E03793000CFE85 /* SceneDelegate.swift */,
-				7C96D95729E03793000CFE85 /* ViewController.swift */,
-				7C96D95929E03793000CFE85 /* Main.storyboard */,
+				7C96D98329E03D85000CFE85 /* Delegates */,
+				7C96D98529E03FAF000CFE85 /* NetworkLayer */,
+				7C96D98B29E0450E000CFE85 /* Modules */,
 				7C96D95C29E03798000CFE85 /* Assets.xcassets */,
 				7C96D95E29E03798000CFE85 /* LaunchScreen.storyboard */,
 				7C96D96129E03798000CFE85 /* Info.plist */,
@@ -125,6 +130,65 @@
 				7C96D97629E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift */,
 			);
 			path = RobustaTaskUITests;
+			sourceTree = "<group>";
+		};
+		7C96D98329E03D85000CFE85 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D95329E03793000CFE85 /* AppDelegate.swift */,
+				7C96D95529E03793000CFE85 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7C96D98529E03FAF000CFE85 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D98629E04442000CFE85 /* NetworkRequest.swift */,
+				7C96D98929E0448F000CFE85 /* EndPoints.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		7C96D98B29E0450E000CFE85 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D98C29E04518000CFE85 /* HomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7C96D98C29E04518000CFE85 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D98F29E04535000CFE85 /* Model */,
+				7C96D98E29E0452E000CFE85 /* ViewModel */,
+				7C96D98D29E04526000CFE85 /* View */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		7C96D98D29E04526000CFE85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D95729E03793000CFE85 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C96D98E29E0452E000CFE85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7C96D98F29E04535000CFE85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +297,6 @@
 			files = (
 				7C96D96029E03798000CFE85 /* LaunchScreen.storyboard in Resources */,
 				7C96D95D29E03798000CFE85 /* Assets.xcassets in Resources */,
-				7C96D95B29E03793000CFE85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C96D95829E03793000CFE85 /* ViewController.swift in Sources */,
+				7C96D95829E03793000CFE85 /* HomeViewController.swift in Sources */,
+				7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */,
 				7C96D95429E03793000CFE85 /* AppDelegate.swift in Sources */,
+				7C96D98729E04442000CFE85 /* NetworkRequest.swift in Sources */,
+				7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D95629E03793000CFE85 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */,
+				7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D96B29E03799000CFE85 /* RobustaTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C96D95929E03793000CFE85 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C96D95A29E03793000CFE85 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C96D95E29E03798000CFE85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +502,10 @@
 				INFOPLIST_FILE = RobustaTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +531,10 @@
 				INFOPLIST_FILE = RobustaTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

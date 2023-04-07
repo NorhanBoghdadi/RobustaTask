@@ -22,6 +22,12 @@
 		7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
 		7C96D99429E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
 		7C96D99529E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
+		7C96D99929E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */; };
+		7C96D99A29E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */; };
+		7C96D99C29E05347000CFE85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99B29E05347000CFE85 /* HomeViewModel.swift */; };
+		7C96D99D29E05347000CFE85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99B29E05347000CFE85 /* HomeViewModel.swift */; };
+		7C96D99F29E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
+		7C96D9A029E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,9 @@
 		7C96D98929E0448F000CFE85 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModelResponse.swift; sourceTree = "<group>"; };
 		7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReposNetworkService.swift; sourceTree = "<group>"; };
+		7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		7C96D99B29E05347000CFE85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +174,9 @@
 		7C96D98C29E04518000CFE85 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
-				7C96D98F29E04535000CFE85 /* Model */,
-				7C96D98E29E0452E000CFE85 /* ViewModel */,
 				7C96D98D29E04526000CFE85 /* View */,
+				7C96D98E29E0452E000CFE85 /* ViewModel */,
+				7C96D98F29E04535000CFE85 /* Model */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				7C96D95729E03793000CFE85 /* HomeViewController.swift */,
+				7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +193,8 @@
 		7C96D98E29E0452E000CFE85 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */,
+				7C96D99B29E05347000CFE85 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -334,10 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C96D99429E049F7000CFE85 /* GetReposNetworkService.swift in Sources */,
+				7C96D99F29E056F8000CFE85 /* ReposTableViewCell.swift in Sources */,
+				7C96D99C29E05347000CFE85 /* HomeViewModel.swift in Sources */,
 				7C96D95829E03793000CFE85 /* HomeViewController.swift in Sources */,
 				7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */,
 				7C96D95429E03793000CFE85 /* AppDelegate.swift in Sources */,
 				7C96D98729E04442000CFE85 /* NetworkRequest.swift in Sources */,
+				7C96D99929E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */,
 				7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D95629E03793000CFE85 /* SceneDelegate.swift in Sources */,
 			);
@@ -347,6 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C96D9A029E056F8000CFE85 /* ReposTableViewCell.swift in Sources */,
+				7C96D99A29E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */,
+				7C96D99D29E05347000CFE85 /* HomeViewModel.swift in Sources */,
 				7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */,
 				7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D96B29E03799000CFE85 /* RobustaTaskTests.swift in Sources */,

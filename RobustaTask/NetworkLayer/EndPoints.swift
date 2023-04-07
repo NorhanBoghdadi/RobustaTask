@@ -14,7 +14,7 @@ typealias Headers = [String: String]
 enum Endpoints {
     
   // organise all the end points here for clarity
-    
+    case getRepos
     
   // gave a default timeout but can be different for each.
     var requestTimeOut: Int {
@@ -24,7 +24,8 @@ enum Endpoints {
   //specify the type of HTTP request
     var httpMethod: HTTPMethod {
         switch self {
-        
+        case .getRepos:
+            return .GET
         }
     }
     
@@ -46,9 +47,10 @@ enum Endpoints {
     
   // compose urls for each request
     func getURL() -> String {
-        let baseUrl = "https://api.github.com/"
+        let baseUrl = "https://api.github.com"
         switch self {
-
+        case .getRepos:
+            return "\(baseUrl)/repositories"
                 
         }
     }

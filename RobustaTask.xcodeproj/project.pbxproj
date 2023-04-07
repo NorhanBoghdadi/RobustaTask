@@ -20,6 +20,8 @@
 		7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98929E0448F000CFE85 /* EndPoints.swift */; };
 		7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
 		7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
+		7C96D99429E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
+		7C96D99529E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		7C96D98629E04442000CFE85 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		7C96D98929E0448F000CFE85 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModelResponse.swift; sourceTree = "<group>"; };
+		7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReposNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,7 @@
 			children = (
 				7C96D98629E04442000CFE85 /* NetworkRequest.swift */,
 				7C96D98929E0448F000CFE85 /* EndPoints.swift */,
+				7C96D99729E04A1A000CFE85 /* NetworkCalls */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -189,6 +193,14 @@
 				7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7C96D99729E04A1A000CFE85 /* NetworkCalls */ = {
+			isa = PBXGroup;
+			children = (
+				7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */,
+			);
+			path = NetworkCalls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C96D99429E049F7000CFE85 /* GetReposNetworkService.swift in Sources */,
 				7C96D95829E03793000CFE85 /* HomeViewController.swift in Sources */,
 				7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */,
 				7C96D95429E03793000CFE85 /* AppDelegate.swift in Sources */,
@@ -337,6 +350,7 @@
 				7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */,
 				7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
 				7C96D96B29E03799000CFE85 /* RobustaTaskTests.swift in Sources */,
+				7C96D99529E049F7000CFE85 /* GetReposNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

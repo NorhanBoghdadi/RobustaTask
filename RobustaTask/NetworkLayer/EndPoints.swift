@@ -15,6 +15,7 @@ enum Endpoints {
     
   // organise all the end points here for clarity
     case getRepos
+    case searchRepo(by: String)
     
   // gave a default timeout but can be different for each.
     var requestTimeOut: Int {
@@ -25,6 +26,8 @@ enum Endpoints {
     var httpMethod: HTTPMethod {
         switch self {
         case .getRepos:
+            return .GET
+        case .searchRepo:
             return .GET
         }
     }
@@ -51,7 +54,8 @@ enum Endpoints {
         switch self {
         case .getRepos:
             return "\(baseUrl)/repositories"
-                
+        case .searchRepo(let text):
+            return "\(baseUrl)/search/repositories?q=\(text)+in:name"
         }
     }
 }

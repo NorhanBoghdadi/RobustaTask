@@ -10,6 +10,7 @@ import Combine
 
 protocol GetReposProtocol {
     func getRepos() -> AnyPublisher<ReposModelResponse, NetworkError>
+    func searchRepos(by text: String) -> AnyPublisher<ReposSearchModelResponse, NetworkError>
 }
 
 class GetReposService: GetReposProtocol {
@@ -21,5 +22,11 @@ class GetReposService: GetReposProtocol {
         return self.networkRequest.request(request)
         
     }
-  
+    
+    func searchRepos(by text: String) -> AnyPublisher<ReposSearchModelResponse, NetworkError> {
+        let endpoint = Endpoints.searchRepo(by: text)
+        let request = endpoint.createRequest(token: "")
+        return self.networkRequest.request(request)
+
+    }
 }

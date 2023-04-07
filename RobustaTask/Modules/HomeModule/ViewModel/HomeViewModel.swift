@@ -8,16 +8,11 @@
 import Foundation
 import Combine
 
-class HomeViewModel: HomeViewModelProtocol {    
-    var searchActive: Bool = false 
+class HomeViewModel: HomeViewModelProtocol {
     @Published var allRepos: ReposModelResponse = []
-    var filteredRepos: ReposModelResponse = []
+    @Published var filteredRepos: ReposModelResponse = []
 
     var subscriptions = Set<AnyCancellable>()
-
-    var numberOfRepos: Int {
-        searchActive ? filteredRepos.count : allRepos.count 
-    }
     
     func getAllRepos() {
         let service = GetReposService()
@@ -37,5 +32,27 @@ class HomeViewModel: HomeViewModelProtocol {
                 .store(in: &subscriptions)
 
     }
+    
+    func searchRepos(by text: String) {
+        let service = GetReposService()
+        service.searchRepos(by: text)
+            .receive(on: DispatchQueue.main)
+            .sink { (completion) in
+                switch completion {
+                    case .failure(let error):
+                        print("oops got an error \(error.localizedDescription)")
+                    case .finished:
+                        print("nothing much to do here")
+                    }
+                } receiveValue: { [weak self] (response) in
+                    print("got my response here \(response)")
+                    self?.filteredRepos = response.repos ?? []
+                }
+                .store(in: &subscriptions)
+
+    }
+
+    
+     
 
 }

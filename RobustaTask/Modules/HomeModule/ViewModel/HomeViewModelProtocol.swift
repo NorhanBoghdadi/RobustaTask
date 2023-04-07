@@ -9,9 +9,8 @@ import Foundation
 
 protocol HomeViewModelProtocol: AnyObject {
     func getAllRepos()
-    var numberOfRepos: Int {get}
+    func searchRepos(by text: String)
     var allRepos: ReposModelResponse {get}
-    var searchActive: Bool {get set}
     var filteredRepos: ReposModelResponse {get}
 }
 

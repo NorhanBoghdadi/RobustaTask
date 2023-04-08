@@ -15,7 +15,6 @@ class ReposTableViewCell: UITableViewCell {
         imgView.layer.cornerRadius = HomeViewConstants.padding
         imgView.clipsToBounds = true
         imgView.layer.borderWidth = 1
-        imgView.layer.masksToBounds = false
         return imgView
     }()
     
@@ -101,7 +100,7 @@ class ReposTableViewCell: UITableViewCell {
     }
     
     func configure(for repo: ReposModelResponseElement) {
-        avatarImageView.image = UIImage(systemName: "heart.fill") //TODO: image loader function
+        try? avatarImageView.setImage(url: repo.owner?.avatarURL ?? "", placeHolder: UIImage(named: "loading")!)
         repoNameLabel.text = "Repository Name: \(repo.name ?? "")"
         repoOwnerLabel.text = "Repository Owner: \(repo.owner?.login ?? "")"
         dateCreatedLabel.text = "Date of creation: 4 month ago." //TODO: Find the date

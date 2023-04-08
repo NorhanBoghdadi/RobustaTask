@@ -14,7 +14,7 @@ protocol GetReposProtocol {
 }
 
 class GetReposService: GetReposProtocol {
-    private var networkRequest = NativeRequestable()  // inject this for testability
+    var networkRequest: Requestable = NativeRequestable()  // inject this for testability
 
     func getRepos() -> AnyPublisher<ReposModelResponse, NetworkError> {
         let endpoint = Endpoints.getRepos

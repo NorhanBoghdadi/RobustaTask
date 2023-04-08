@@ -16,33 +16,23 @@
 		7C96D97529E03799000CFE85 /* RobustaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D97429E03799000CFE85 /* RobustaTaskUITests.swift */; };
 		7C96D97729E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D97629E03799000CFE85 /* RobustaTaskUITestsLaunchTests.swift */; };
 		7C96D98729E04442000CFE85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98629E04442000CFE85 /* NetworkRequest.swift */; };
-		7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98629E04442000CFE85 /* NetworkRequest.swift */; };
 		7C96D98A29E0448F000CFE85 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D98929E0448F000CFE85 /* EndPoints.swift */; };
 		7C96D99129E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
-		7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99029E045D0000CFE85 /* ReposModelResponse.swift */; };
 		7C96D99429E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
-		7C96D99529E049F7000CFE85 /* GetReposNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99329E049F7000CFE85 /* GetReposNetworkService.swift */; };
 		7C96D99929E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */; };
-		7C96D99A29E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99829E052A5000CFE85 /* HomeViewModelProtocol.swift */; };
 		7C96D99C29E05347000CFE85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99B29E05347000CFE85 /* HomeViewModel.swift */; };
-		7C96D99D29E05347000CFE85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99B29E05347000CFE85 /* HomeViewModel.swift */; };
 		7C96D99F29E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
-		7C96D9A029E056F8000CFE85 /* ReposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96D99E29E056F8000CFE85 /* ReposTableViewCell.swift */; };
 		7CD15A6829E0C958000A90E9 /* ReposSearchModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A6729E0C958000A90E9 /* ReposSearchModelResponse.swift */; };
 		7CD15A7129E0D5C0000A90E9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7029E0D5C0000A90E9 /* DetailsViewController.swift */; };
-		7CD15A7229E0D5C0000A90E9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7029E0D5C0000A90E9 /* DetailsViewController.swift */; };
 		7CD15A7429E18C46000A90E9 /* GetRepoDetailsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7329E18C46000A90E9 /* GetRepoDetailsNetworkService.swift */; };
-		7CD15A7529E18C46000A90E9 /* GetRepoDetailsNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7329E18C46000A90E9 /* GetRepoDetailsNetworkService.swift */; };
 		7CD15A7829E18E2F000A90E9 /* RepoDetailsModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7729E18E2F000A90E9 /* RepoDetailsModelResponse.swift */; };
-		7CD15A7929E18E2F000A90E9 /* RepoDetailsModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7729E18E2F000A90E9 /* RepoDetailsModelResponse.swift */; };
 		7CD15A7B29E1903D000A90E9 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7A29E1903D000A90E9 /* DetailsViewModel.swift */; };
-		7CD15A7C29E1903E000A90E9 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7A29E1903D000A90E9 /* DetailsViewModel.swift */; };
 		7CD15A7F29E1AC3A000A90E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7E29E1AC3A000A90E9 /* ImageLoader.swift */; };
-		7CD15A8029E1AC3A000A90E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A7E29E1AC3A000A90E9 /* ImageLoader.swift */; };
 		7CD15A8229E1AC5E000A90E9 /* ImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8129E1AC5E000A90E9 /* ImageView+Download.swift */; };
-		7CD15A8329E1AC5E000A90E9 /* ImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8129E1AC5E000A90E9 /* ImageView+Download.swift */; };
 		7CD15A8529E1AC7F000A90E9 /* UIimage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8429E1AC7F000A90E9 /* UIimage+resize.swift */; };
-		7CD15A8629E1AC7F000A90E9 /* UIimage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8429E1AC7F000A90E9 /* UIimage+resize.swift */; };
+		7CD15A8929E1AF61000A90E9 /* ImageLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8829E1AF61000A90E9 /* ImageLoaderTest.swift */; };
+		7CD15A8D29E20D08000A90E9 /* GetReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8C29E20D08000A90E9 /* GetReposTests.swift */; };
+		7CD15A8F29E211BC000A90E9 /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15A8E29E211BB000A90E9 /* NetworkRequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +80,9 @@
 		7CD15A7E29E1AC3A000A90E9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		7CD15A8129E1AC5E000A90E9 /* ImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Download.swift"; sourceTree = "<group>"; };
 		7CD15A8429E1AC7F000A90E9 /* UIimage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimage+resize.swift"; sourceTree = "<group>"; };
+		7CD15A8829E1AF61000A90E9 /* ImageLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTest.swift; sourceTree = "<group>"; };
+		7CD15A8C29E20D08000A90E9 /* GetReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReposTests.swift; sourceTree = "<group>"; };
+		7CD15A8E29E211BB000A90E9 /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				7C96D96A29E03799000CFE85 /* RobustaTaskTests.swift */,
+				7CD15A8829E1AF61000A90E9 /* ImageLoaderTest.swift */,
+				7CD15A8C29E20D08000A90E9 /* GetReposTests.swift */,
+				7CD15A8E29E211BB000A90E9 /* NetworkRequestTests.swift */,
 			);
 			path = RobustaTaskTests;
 			sourceTree = "<group>";
@@ -449,20 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C96D9A029E056F8000CFE85 /* ReposTableViewCell.swift in Sources */,
-				7CD15A7929E18E2F000A90E9 /* RepoDetailsModelResponse.swift in Sources */,
-				7CD15A8329E1AC5E000A90E9 /* ImageView+Download.swift in Sources */,
-				7CD15A8029E1AC3A000A90E9 /* ImageLoader.swift in Sources */,
-				7C96D99A29E052A5000CFE85 /* HomeViewModelProtocol.swift in Sources */,
-				7CD15A8629E1AC7F000A90E9 /* UIimage+resize.swift in Sources */,
-				7CD15A7529E18C46000A90E9 /* GetRepoDetailsNetworkService.swift in Sources */,
-				7C96D99D29E05347000CFE85 /* HomeViewModel.swift in Sources */,
-				7CD15A7229E0D5C0000A90E9 /* DetailsViewController.swift in Sources */,
-				7C96D98829E04448000CFE85 /* NetworkRequest.swift in Sources */,
-				7CD15A7C29E1903E000A90E9 /* DetailsViewModel.swift in Sources */,
-				7C96D99229E045D0000CFE85 /* ReposModelResponse.swift in Sources */,
+				7CD15A8929E1AF61000A90E9 /* ImageLoaderTest.swift in Sources */,
 				7C96D96B29E03799000CFE85 /* RobustaTaskTests.swift in Sources */,
-				7C96D99529E049F7000CFE85 /* GetReposNetworkService.swift in Sources */,
+				7CD15A8F29E211BC000A90E9 /* NetworkRequestTests.swift in Sources */,
+				7CD15A8D29E20D08000A90E9 /* GetReposTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

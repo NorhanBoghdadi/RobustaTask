@@ -134,8 +134,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = searchActive ? homeViewModel.filteredRepos[indexPath.row] : homeViewModel.allRepos[indexPath.row]
-
-        let vc = DetailsViewController(repoData: model)
+        let viewModel = DetailsViewModel()
+        let vc = DetailsViewController(repoData: model, detailsViewModel: viewModel)
         present(vc, animated: true)
     }
 }

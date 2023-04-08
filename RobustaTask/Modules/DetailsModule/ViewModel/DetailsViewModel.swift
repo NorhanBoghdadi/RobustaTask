@@ -14,7 +14,7 @@ protocol DetailsViewModelProtocol: AnyObject {
 }
 
 class DetailsViewModel: DetailsViewModelProtocol {
-    var repoDetails: RepoDetailsResponse?
+    @Published var repoDetails: RepoDetailsResponse?
     var subscriptions = Set<AnyCancellable>()
     
     func getRepoDetails(url: String) {

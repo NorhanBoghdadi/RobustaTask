@@ -132,6 +132,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = searchActive ? homeViewModel.filteredRepos[indexPath.row] : homeViewModel.allRepos[indexPath.row]
+
+        let vc = DetailsViewController(repoData: model)
+        present(vc, animated: true)
+    }
 }
 
 // MARK: - Handle SearchBar
